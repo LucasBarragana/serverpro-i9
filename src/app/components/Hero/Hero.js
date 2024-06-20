@@ -26,7 +26,7 @@ export default function Hero() {
   };
 
   return (
-    <section id='Hero' className="relative w-full h-[90vh] flex items-center justify-center overflow-hidden">
+    <section id='Hero' className="relative w-full h-[80vh] flex items-center justify-center overflow-hidden">
       <Image
         src="/fundo1.jpeg"
         alt="Background Image"
@@ -64,7 +64,7 @@ export default function Hero() {
               transition={{ duration: 1, ease: 'easeOut', delay: 0.4 }}
             >
               <Link href="/" 
-                className="text-sm sm:text-base md:text-lg  px-2 py-2 sm:px-3 py-3 md:px-3 py-3  bg-purple-500 text-white rounded-full hover:bg-purple-600">
+                className="text-sm sm:text-base md:text-base  px-2 py-2 sm:px-3 py-3 md:px-6 py-4  bg-purple-500 text-white rounded-full hover:bg-purple-600">
                 Experimente Grátis
               </Link>
             </motion.div>

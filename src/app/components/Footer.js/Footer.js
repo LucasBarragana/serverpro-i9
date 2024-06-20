@@ -28,9 +28,8 @@ export default function Footer() {
                             <Link href='#' className="block text-xs mb-2  md:text-xs hover:text-pink-500">contato@surveypro.com.br</Link>
                         </div>
                     </div>
-                    <div className="flex flex-col items-center space-y-4 w-full md:w-1/4 order-2 md:order-1">
+                    <div className="flex flex-col items-center space-y-4 w-full md:w-2/5 order-2 md:order-1">
                         <Image src='/logo4.svg' width={80} height={80} alt="logo" className="w-24 h-24 md:w-24 md:h-24" />
-                        <Image src='/name-logo-line.svg' width={80} height={40} alt="namelogo" className="w-40 h-16 md:w-46 md:h-14" />
                         <p className="text-center text-sm md:text-xs">
                             Plataforma para você criar e gerenciar seus formulários
                             com segurança e praticidade.

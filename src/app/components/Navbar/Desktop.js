@@ -47,13 +47,16 @@ export default function Desktop() {
               Plataforma
             </Link>
             <Link href="#About" className={`nav-link ${activeSection === 'About' ? 'active' : ''}`}>
-              Recursos Premium
+              Sobre
             </Link>
             <Link href="#Process" className={`nav-link ${activeSection === 'Process' ? 'active' : ''}`}>
-              Preços
-            </Link>
+              Etapas
+            </Link>            
             <Link href="#VideoAbout" className={`nav-link ${activeSection === 'VideoAbout' ? 'active' : ''}`}>
               O que há de novo
+            </Link>
+            <Link href="#Plans" className={`nav-link ${activeSection === 'Plans' ? 'active' : ''}`}>
+              Planos
             </Link>
             <Link href="#Support" className={`nav-link ${activeSection === 'Support' ? 'active' : ''}`}>
               Conecte-se

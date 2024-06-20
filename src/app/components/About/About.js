@@ -49,7 +49,8 @@ export default function About() {
                         variants={containerVariants}
                         className="text-left mt-16"
                     >
-                        <Link href="#" className="px-6 py-3 bg-purple-500 text-white text-lg rounded-full hover:bg-purple-600">
+                        <Link href="#" 
+                            className="text-sm sm:text-base md:text-base  px-2 py-2 sm:px-3 py-3 md:px-6 py-4  bg-purple-500 text-white rounded-full hover:bg-purple-600">
                             Experimente Grátis
                         </Link>
                     </motion.div>
