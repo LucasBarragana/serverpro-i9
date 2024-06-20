@@ -24,7 +24,7 @@ export default function Suporte() {
 
     return (
         <section id="Support">
-            <div ref={ref} className="max-w-7xl mx-auto relative px-4 sm:px-6 lg:px-0 lg:pb-28">
+            <div ref={ref} className="max-w-7xl mx-auto relative px-4 sm:px-6 lg:px-10 lg:pb-28">
                 <motion.h1
                     className="text-white text-4xl sm:text-5xl md:text-6xl pt-20 text-center"
                     initial="hidden"
@@ -36,7 +36,7 @@ export default function Suporte() {
                 <div className="flex flex-col md:flex-row justify-between items-center py-12">
                     <div className="w-full md:w-1/2 flex flex-col justify-center items-start p-4 sm:p-8 lg:pr-14 lg:pl-0">
                         <motion.h1
-                            className="text-3xl sm:text-4xl md:text-5xl text-white mb-6 md:mb-8"
+                            className="text-2xl sm:text-3xl md:text-4xl text-white mb-6 md:mb-8"
                             initial="hidden"
                             animate={inView ? 'visible' : 'hidden'}
                             variants={containerVariants}
@@ -53,12 +53,12 @@ export default function Suporte() {
                         </motion.p>
                     </div>
                     <motion.div
-                        className="relative w-[80%]  md:w-1/2  h-full flex justify-center items-center mt-10 md:mt-0"
+                        className="relative w-1/2 flex justify-center items-center mt-10 md:mt-0"
                         initial="hidden"
                         animate={inView ? 'visible' : 'hidden'}
                         variants={containerVariants}
                     >
-                        <div className="w-full sm:w-[400px] md:w-[650px] lg:w-[790px] h-[300px] sm:h-[350px] md:h-700px  shadow-lg">
+                        <div className="w-full sm:w-[400px] md:w-[250px]  h-[300px] sm:h-[350px] md:h-[300px]   shadow-lg">
                             <Image
                                 src="/Suporte.png"
                                 alt="Image 1"

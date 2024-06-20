@@ -33,12 +33,12 @@ export default function Desktop() {
 
   return (
     <nav className="hidden lg:block">
-      <div className='fixed top-0 left-0 w-full z-50 h-[86px] backdrop-blur-lg shadow-lg'>
-        <div className="mx-auto py-2 flex justify-between items-center max-w-7xl mt-3">
+      <div className='fixed top-0 left-0 w-full z-50 h-[66px] backdrop-blur-lg shadow-lg'>
+        <div className="mx-auto py-2 flex justify-between items-center max-w-7xl px-4 sm:px-6 lg:px-10">
           <div className="flex items-center">
-            <div className="text-lg font-bold">
+            <div className="font-bold">
               <Link href="/">
-                <Image src='/logo4.svg' width={48} height={48} alt="Logo" />
+                <Image src='/logo4.svg' width={42} height={42} alt="Logo" />
               </Link>
             </div>
           </div>
@@ -60,11 +60,11 @@ export default function Desktop() {
             </Link>
           </div>
           <div className="flex items-center space-x-4">
-            <Link href='#' className='flex justify-center align-center border rounded-md px-2 py-2 w-[45px] h-[45px]'>
-              <Image src='/user.svg' width={19} height={19} alt='User Icon' />
+            <Link href='#' className='flex justify-center align-center border rounded-md px-2 py-2 w-[40px] h-[40px]'>
+              <Image src='/user.svg' width={16} height={16} alt='User Icon' />
             </Link>
-            <Link href='#' className='flex justify-center align-center border rounded-md px-3 py-2 w-[45px] h-[45px]'>
-              <Image src='/question.svg' width={19} height={19} alt='Question Icon' />
+            <Link href='#' className='flex justify-center align-center border rounded-md px-3 py-2 w-[40px] h-[40px]'>
+              <Image src='/question.svg' width={16} height={16} alt='Question Icon' />
             </Link>
           </div>
         </div>

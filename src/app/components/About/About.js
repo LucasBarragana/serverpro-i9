@@ -24,11 +24,11 @@ export default function About() {
     };
 
     return (
-        <section id="About" className="max-w-7xl mx-auto relative px-4 sm:px-6 lg:px-0 md:py-32 ">
+        <section id="About" className="max-w-7xl mx-auto relative px-4 sm:px-6 lg:px-10 md:py-22  md:pb-16">
             <div ref={ref} className="flex flex-col md:flex-row justify-between items-center py-12 lg:h-[550px]">
-                <div className="w-full md:w-1/2 flex flex-col justify-center items-start p-4 sm:p-8 lg:pr-14 lg:pl-0">
+                <div className="w-full md:w-1/2 flex flex-col justify-center items-start md:pr-10">
                     <motion.h1
-                        className="text-4xl md:text-5xl text-white mb-8"
+                        className="text-3xl md:text-4xl lg:text-4xl text-white mb-8"
                         initial="hidden"
                         animate={inView ? 'visible' : 'hidden'}
                         variants={containerVariants}
@@ -47,7 +47,7 @@ export default function About() {
                         initial="hidden"
                         animate={inView ? 'visible' : 'hidden'}
                         variants={containerVariants}
-                        className="text-left mt-12"
+                        className="text-left mt-16"
                     >
                         <Link href="#" className="px-6 py-3 bg-purple-500 text-white text-lg rounded-full hover:bg-purple-600">
                             Experimente Grátis
@@ -55,12 +55,12 @@ export default function About() {
                     </motion.div>
                 </div>
                 <motion.div
-                    className="relative w-full md:w-1/2 h-full flex justify-center items-center mt-10 md:mt-0"
+                    className="relative w-full md:w-1/2 h-full flex justify-center items-center mt-10 md:mt-10"
                     initial="hidden"
                     animate={inView ? 'visible' : 'hidden'}
                     variants={containerVariants}
                 >
-                    <div className="w-full sm:w-[400px] md:w-[650px] lg:w-[790px] h-[300px] sm:h-[350px] md:h-700px shadow-lg">
+                    <div className="w-full sm:w-[400px] md:w-[650px] lg:w-[790px] h-[300px] sm:h-[350px] md:h-[600px]">
                         <Image
                             src="/Group.png"
                             alt="Image 1"

@@ -6,13 +6,13 @@ import { useInView } from 'react-intersection-observer';
 
 export default function Process() {
   const { ref, inView } = useInView({
-    triggerOnce: true, // Dispara a animação apenas uma vez
-    threshold: 0.5, // Quando 50% do componente estiver visível
+    triggerOnce: true,
+    threshold: 0.5,
   });
 
   return (
     <section id="Process">
-      <div className="relative w-full py-28 px-6 sm:px-6 lg:px-0">
+      <div className="relative w-full py-28 px-6 sm:px-6 lg:px-10">
         <Image
           src="/fundo2.jpeg"
           alt="Background Image"

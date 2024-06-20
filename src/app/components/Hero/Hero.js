@@ -8,8 +8,8 @@ import { useInView } from 'react-intersection-observer';
 
 export default function Hero() {
   const { ref, inView } = useInView({
-    triggerOnce: true, // Dispara a animação apenas uma vez
-    threshold: 0.5, // Define o ponto de disparo quando 50% do componente estiver visível
+    triggerOnce: true, 
+    threshold: 0.5, 
   });
 
   const containerVariants = {
@@ -20,13 +20,13 @@ export default function Hero() {
       transition: {
         duration: 1,
         ease: 'easeOut',
-        delay: 0.3, // Delay opcional para iniciar a animação
+        delay: 0.3,
       },
     },
   };
 
   return (
-    <section id='Hero' className="relative w-full h-screen lg:h-[750px] flex items-center justify-center overflow-hidden">
+    <section id='Hero' className="relative w-full h-[90vh] flex items-center justify-center overflow-hidden">
       <Image
         src="/fundo1.jpeg"
         alt="Background Image"
@@ -34,7 +34,7 @@ export default function Hero() {
         quality={100}
       />
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-900 to-transparent opacity-100"></div>
-      <div className="max-w-7xl mx-auto relative px-4 sm:px-6 lg:px-0">
+      <div className="max-w-7xl mx-auto relative px-4 sm:px-6 lg:px-10">
         <div className="flex flex-col lg:flex-row justify-between items-center py-12">
           <motion.div
             className='w-full lg:w-1/2 flex flex-col justify-center items-start p-4 sm:p-8 lg:px-0 z-10'
@@ -43,7 +43,7 @@ export default function Hero() {
             variants={containerVariants}
           >
             <motion.h1
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-4 sm:mb-6 md:mb-10"
+              className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl  text-white mb-4 sm:mb-6 md:mb-10"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: 'easeOut' }}
@@ -63,7 +63,8 @@ export default function Hero() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: 'easeOut', delay: 0.4 }}
             >
-              <Link href="/" className="px-4 sm:px-6 py-2 sm:py-3 bg-purple-500 text-white text-sm sm:text-lg rounded-full hover:bg-purple-600">
+              <Link href="/" 
+                className="text-sm sm:text-base md:text-lg  px-2 py-2 sm:px-3 py-3 md:px-3 py-3  bg-purple-500 text-white rounded-full hover:bg-purple-600">
                 Experimente Grátis
               </Link>
             </motion.div>
