@@ -26,7 +26,7 @@ export default function Hero() {
   };
 
   return (
-    <section id='Hero' className="relative w-full h-[80vh] flex items-center justify-center overflow-hidden">
+    <section id='Hero' className="relative w-full h-[90vh] flex items-center justify-center overflow-hidden">
       <Image
         src="/fundo1.jpeg"
         alt="Background Image"
@@ -34,7 +34,7 @@ export default function Hero() {
         quality={100}
       />
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-900 to-transparent opacity-100"></div>
-      <div className="max-w-7xl mx-auto relative px-4 sm:px-6 lg:px-10">
+      <div className="mx-auto relative px-10 sm:px-10 md:px-20 lg:px-40">
         <div className="flex flex-col lg:flex-row justify-between items-center py-12">
           <motion.div
             className='w-full lg:w-1/2 flex flex-col justify-center items-start p-4 sm:p-8 lg:px-0 z-10'
@@ -43,7 +43,7 @@ export default function Hero() {
             variants={containerVariants}
           >
             <motion.h1
-              className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl  text-white mb-4 sm:mb-6 md:mb-10"
+              className="text-3xl sm:text-4xl md:text-4xl lg:text-6xl  text-white mb-4 sm:mb-6 md:mb-10"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: 'easeOut' }}
@@ -51,7 +51,7 @@ export default function Hero() {
               CRIE FORMULÁRIOS DIGITAIS EM MINUTOS
             </motion.h1>
             <motion.p
-              className="text-base sm:text-lg md:text-xl text-white mb-4 sm:mb-6 md:mb-10"
+              className="text-sm sm:text-sm md:text-base text-white mb-4 sm:mb-6 md:mb-10"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: 'easeOut', delay: 0.2 }}

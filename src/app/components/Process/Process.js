@@ -12,7 +12,7 @@ export default function Process() {
 
   return (
     <section id="Process">
-      <div className="relative w-full py-28 px-6 sm:px-6 lg:px-10">
+      <div className="relative w-full py-28 px-10 sm:px-10 md:px-20 lg:px-40">
         <Image
           src="/fundo2.jpeg"
           alt="Background Image"
@@ -27,7 +27,7 @@ export default function Process() {
             opacity: 0.80,
           }}
         ></div>
-        <div className="max-w-7xl mx-auto relative z-10 flex flex-col justify-center items-center h-full text-white">
+        <div className="mx-auto relative z-10 flex flex-col justify-center items-center h-full text-white ">
           <div className="flex flex-col items-center text-center mb-16">
             <motion.h4
               ref={ref}
