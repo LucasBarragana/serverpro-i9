@@ -86,6 +86,16 @@ body {
 }
 
 
+
+/* ----------  Hero  ---------- */
+
+.backHero{
+  background: linear-gradient(to right, #280957, #28095700);
+  opacity: 100;
+}
+
+
+
 /* ----------  ABOUT  ---------- */
 
 #About {
@@ -114,7 +124,17 @@ body {
 }
 
 
+/* ----------  Process  ---------- */
 
+.backProcess1{
+  background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+  opacity: 100;
+}
+
+.backProcess2{
+  background: linear-gradient(to top, #280957, #28095700);
+  opacity: 100;
+}
 
 
 
@@ -268,6 +288,16 @@ body {
   --tw-gradient-to: transparent;
 }
 
+
+
+.card:hover h2{
+  color: white;
+}
+
+
+.card:hover .bubleTitle{
+  z-index: 10;
+}
 
 
 /* ----------  PLANS LIST  ---------- */

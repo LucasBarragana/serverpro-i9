@@ -33,11 +33,11 @@ export default function Hero() {
         layout="fill"
         quality={100}
       />
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-900 to-transparent opacity-100"></div>
+      <div className="backHero absolute top-0 left-0 w-full h-full"></div>
       <div className="mx-auto relative px-10 sm:px-10 md:px-20 lg:px-40">
         <div className="flex flex-col lg:flex-row justify-between items-center py-12">
           <motion.div
-            className='w-full lg:w-1/2 flex flex-col justify-center items-start p-4 sm:p-8 lg:px-0 z-10'
+            className='w-full md:w-1/2 flex flex-col justify-center items-start p-4 sm:p-8 lg:px-0 z-10'
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
             variants={containerVariants}
@@ -48,10 +48,10 @@ export default function Hero() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: 'easeOut' }}
             >
-              CRIE FORMULÁRIOS DIGITAIS EM MINUTOS
+              CRIE FORMULÁRIOS <br /> DIGITAIS EM <br />MINUTOS
             </motion.h1>
             <motion.p
-              className="text-sm sm:text-sm md:text-base text-white mb-4 sm:mb-6 md:mb-10"
+              className=" text-sm sm:text-sm md:text-base text-white mb-4 sm:mb-6 md:mb-10"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: 'easeOut', delay: 0.2 }}

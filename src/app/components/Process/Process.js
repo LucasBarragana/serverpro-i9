@@ -21,11 +21,10 @@ export default function Process() {
           quality={100}
         />
         <div
-          className="absolute inset-0"
-          style={{
-            background: "linear-gradient(#000000, #3C0E80, #000000)",
-            opacity: 0.80,
-          }}
+          className="backProcess1 absolute inset-0"
+        ></div>
+        <div
+          className="backProcess2 absolute inset-0"
         ></div>
         <div className="mx-auto relative z-10 flex flex-col justify-center items-center h-full text-white ">
           <div className="flex flex-col items-center text-center mb-16">
@@ -64,7 +63,7 @@ export default function Process() {
                 className="mb-4 max-w-full h-auto"
               />
               <motion.h6 className="mt-2 mb-4 text-lg">1. CONSTRUIR</motion.h6>
-              <motion.p className="text-sm md:text-base">
+              <motion.p className="text-xs md:text-sm">
                 Crie seus próprios formulários móveis personalizados usando nosso poderoso criador de formulários.
               </motion.p>
             </motion.div>
@@ -83,7 +82,7 @@ export default function Process() {
                 className="mb-4 max-w-full h-auto"
               />
               <motion.h6 className="mt-2 mb-4 text-lg">2. DISTRIBUIR</motion.h6>
-              <motion.p className="text-sm md:text-base">
+              <motion.p className="text-xs md:text-sm">
                 Distribua automaticamente seus dados e relatórios (PDF, Excel, Word, Json, XML, CSV e mais) de acordo com o fluxo de trabalho do seu próprio negócio.
               </motion.p>
             </motion.div>
@@ -102,7 +101,7 @@ export default function Process() {
                 className="mb-4 max-w-full h-auto"
               />
               <motion.h6 className="mt-2 mb-4 text-lg">3. COLETE</motion.h6>
-              <motion.p className="text-sm md:text-base">
+              <motion.p className="text-xs md:text-sm">
                 Colete conjuntos de dados ricos usando nossos aplicativos móveis intuitivos.
               </motion.p>
             </motion.div>
@@ -121,7 +120,7 @@ export default function Process() {
                 className="mb-4 max-w-full h-auto"
               />
               <motion.h6 className="mt-2 mb-4 text-lg">4. ANALISE</motion.h6>
-              <motion.p className="text-sm md:text-base">
+              <motion.p className="text-xs md:text-sm">
                 O Dashboard é a central de informações rápidas e essenciais sobre o status dos seus questionários.
               </motion.p>
             </motion.div>

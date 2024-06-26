@@ -6,6 +6,7 @@ import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect } from 'react';
+import AllPlans from './AllPlans';
 
 export default function Plans() {
   const { ref: card1Ref, inView: card1InView } = useInView({
@@ -58,7 +59,7 @@ export default function Plans() {
           variants={rocketVariants}
           initial="hidden"
           animate={rocketRefInView ? 'visible' : 'hidden'}
-          className="absolute z-10 h-72 w-[70%] top-22 mb-80 items-center justify-center hidden md:flex"
+          className="absolute z-10 h-72 w-[70%] top-[140px] items-center justify-center hidden md:flex"
         >
           <Image src='/Foguete2.png' layout="fill" objectPosition="center" alt="foguete"/>
         </motion.div>
@@ -72,51 +73,11 @@ export default function Plans() {
             variants={cardVariants} 
             initial="hidden" 
             animate={card1InView ? 'visible' : 'hidden'} 
-            className="card flex flex-col items-center text-center p-4 bg-gradient-to-b from-purple-700 to-purple-900 text-white">
+            className="card flex flex-col items-center text-center p-4 bg-white text-black hover:bg-gradient-to-b hover:from-purple-700 hover:to-purple-900 hover:text-white shadow-lg transition-colors duration-300">
             <div className="w-full h-full p-6 flex flex-col items-center justify-between  pt-6 md:pt-28">
               <div className="w-full flex flex-col items-center text-sm mt-auto ">
-                <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-6 z-10">
+                <div className="bubleTitle bg-white rounded-full w-20 h-20 flex items-center justify-center mb-6">
                   <h3 className="text-purple-700 text-lg font-bold">FREE</h3>
-                </div>
-                <div className="flex items-center mb-6">
-                  <h2 className="text-4xl md:text-5xl font-bold flex items-start mr-2">
-                    <span className="text-lg">R$</span> 280
-                  </h2>
-                  <div className="text-xs mt-1">
-                    <p>Por usuário/Anual</p>
-                    <p>cobrado<br /> mensalmente</p>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full text-sm">
-                <div className="text-center py-1 mb-4">
-                  <h3 className="text-pink-500 font-semibold">ILIMITADO</h3>
-                  <p className="text-white text-xs">Criação de formulários</p>
-                </div>
-                <div className="text-center py-1 border-t border-gray-200 mb-4">
-                  <h3 className="text-pink-500 font-semibold">ILIMITADO</h3>
-                  <p className="text-white text-xs">Envio de formulário para todos os usuários da conta</p>
-                </div>
-                <div className="text-center py-1 border-t border-gray-200">
-                  <h3 className="text-pink-500 font-semibold">ILIMITADO</h3>
-                  <p className="text-white text-xs">Relatórios personalizados em PDF, Word e Excel</p>
-                </div>
-              </div>
-              <Link href="#" className="mt-4 bg-purple-700 text-white py-2 px-6 md:px-20 hover:bg-purple-800 text-sm">
-                Experimente <br /> Grátis
-              </Link>
-            </div>
-          </motion.div>
-          <motion.div 
-            ref={card2Ref} 
-            variants={cardVariants} 
-            initial="hidden" 
-            animate={card2InView ? 'visible' : 'hidden'} 
-            className="card flex flex-col items-center text-center p-4 bg-white text-black shadow-lg">
-            <div className="w-full h-full p-6 flex flex-col items-center justify-between">
-              <div className="w-full flex flex-col items-center text-sm mt-auto">
-                <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                  <h3 className="text-black text-lg font-bold z-10">MENSAL</h3>
                 </div>
                 <div className="flex items-center mb-6">
                   <h2 className="text-4xl md:text-5xl font-bold flex items-start text-purple-700 mr-2 ">
@@ -130,15 +91,55 @@ export default function Plans() {
               </div>
               <div className="w-full text-sm">
                 <div className="text-center py-1 mb-4">
-                  <h3 className="text-pink-500 font-semibold">ILIMITADO</h3>
+                  <h4 className="text-pink-500 font-semibold">ILIMITADO</h4>
                   <p className="text-xs">Criação de formulários</p>
                 </div>
                 <div className="text-center py-1 border-t border-gray-200 mb-4">
-                  <h3 className="text-pink-500 font-semibold">ILIMITADO</h3>
+                  <h4 className="text-pink-500 font-semibold">ILIMITADO</h4>
                   <p className="text-xs">Envio de formulário para todos os usuários da conta</p>
                 </div>
                 <div className="text-center py-1 border-t border-gray-200">
                   <h3 className="text-pink-500 font-semibold">ILIMITADO</h3>
+                  <p className="text-xs">Relatórios personalizados em PDF, Word e Excel</p>
+                </div>
+              </div>
+              <Link href="#" className="mt-4 bg-purple-700 text-white py-2 px-6 md:px-20 rounded-lg hover:bg-purple-800 text-sm">
+                Experimente <br /> Grátis
+              </Link>
+            </div>
+          </motion.div>
+          <motion.div 
+            ref={card2Ref} 
+            variants={cardVariants} 
+            initial="hidden" 
+            animate={card2InView ? 'visible' : 'hidden'} 
+            className="card flex flex-col items-center text-center p-4 bg-white text-black hover:bg-gradient-to-b hover:from-purple-700 hover:to-purple-900 hover:text-white shadow-lg transition-colors duration-300">
+            <div className="w-full h-full p-6 flex flex-col items-center justify-between">
+              <div className="w-full flex flex-col items-center text-sm mt-auto">
+                <div className="bubleTitle bg-white rounded-full w-20 h-20 flex items-center justify-center mb-6">
+                  <h3 className="text-purple-700 text-lg font-bold">MENSAL</h3>
+                </div>
+                <div className="flex items-center mb-6">
+                  <h2 className="text-4xl md:text-5xl font-bold flex items-start text-purple-700 mr-2 ">
+                    <span className="text-lg">R$</span> 280
+                  </h2>
+                  <div className="text-xs mt-1">
+                    <p>Por usuário/Anual</p>
+                    <p>cobrado<br /> mensalmente</p>
+                  </div>
+                </div>
+              </div>
+              <div className="w-full text-sm">
+                <div className="text-center py-1 mb-4">
+                  <h4 className="text-pink-500 font-semibold">ILIMITADO</h4>
+                  <p className="text-xs">Criação de formulários</p>
+                </div>
+                <div className="text-center py-1 border-t border-gray-200 mb-4">
+                  <h4 className="text-pink-500 font-semibold">ILIMITADO</h4>
+                  <p className="text-xs">Envio de formulário para todos os usuários da conta</p>
+                </div>
+                <div className="text-center py-1 border-t border-gray-200">
+                  <h4 className="text-pink-500 font-semibold">ILIMITADO</h4>
                   <p className="text-xs">Relatórios personalizados em PDF, Word e Excel</p>
                 </div>
               </div>
@@ -152,11 +153,11 @@ export default function Plans() {
             variants={cardVariants} 
             initial="hidden" 
             animate={card3InView ? 'visible' : 'hidden'} 
-            className="card flex flex-col items-center text-center p-4 bg-white text-black ">
+            className="card flex flex-col items-center text-center p-4 bg-white text-black hover:bg-gradient-to-b hover:from-purple-700 hover:to-purple-900 hover:text-white shadow-lg transition-colors duration-300">
             <div className="w-full h-full p-6 flex flex-col items-center justify-between">
               <div className="w-full flex flex-col items-center text-sm mt-auto">
-                <div className="bg-white rounded-full w-12 h-12 flex items-center justify-center mb-4">
-                  <h3 className="text-black text-lg font-bold">ANUAL</h3>
+                <div className="bubleTitle bg-white rounded-full w-20 h-20 flex items-center justify-center mb-6">
+                  <h3 className="text-purple-700 text-lg font-bold">ANUAL</h3>
                 </div>
                 <div className="flex items-center mb-6">
                   <h2 className="text-4xl md:text-5xl font-bold flex items-start text-purple-700 mr-2 ">
@@ -170,15 +171,15 @@ export default function Plans() {
               </div>
               <div className="w-full text-sm">
                 <div className="text-center py-1 mb-4">
-                  <h3 className="text-pink-500 font-semibold">ILIMITADO</h3>
+                  <h4 className="text-pink-500 font-semibold">ILIMITADO</h4>
                   <p className="text-xs">Criação de formulários</p>
                 </div>
                 <div className="text-center py-1 border-t border-gray-200 mb-4">
-                  <h3 className="text-pink-500 font-semibold">ILIMITADO</h3>
+                  <h4 className="text-pink-500 font-semibold">ILIMITADO</h4>
                   <p className="text-xs">Envio de formulário para todos os usuários da conta</p>
                 </div>
                 <div className="text-center py-1 border-t border-gray-200">
-                  <h3 className="text-pink-500 font-semibold">ILIMITADO</h3>
+                  <h4 className="text-pink-500 font-semibold">ILIMITADO</h4>
                   <p className="text-xs">Relatórios personalizados em PDF, Word e Excel</p>
                 </div>
               </div>
@@ -188,6 +189,7 @@ export default function Plans() {
             </div>
           </motion.div>
         </div>
+        <AllPlans />
       </div>
     </section>
   );

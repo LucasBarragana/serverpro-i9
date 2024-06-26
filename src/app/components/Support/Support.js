@@ -7,8 +7,8 @@ import Image from 'next/image';
 
 export default function About() {
     const { ref, inView } = useInView({
-        triggerOnce: true, // Só ativa uma vez
-        threshold: 0.5, // Quando 50% do componente está visível
+        triggerOnce: true,
+        threshold: 0.5,
     });
 
     const containerVariants = {
@@ -18,13 +18,16 @@ export default function About() {
             y: 0,
             transition: {
                 duration: 0.5,
-                delay: 0.3, // Delay opcional para iniciar a animação
+                delay: 0.3,
             },
         },
     };
 
     return (
-        <section id="About" className="mx-auto relative px-10 sm:px-10 md:px-20 my-16 lg:px-40 mb-20">
+        <section id="About" className="mx-auto relative px-10 sm:px-10 md:px-20 my-16 lg:px-40 mb-40">
+            <div className="flex justify-center items-center mb-10">
+                <h1 className='text-white text-5xl font-medium'>SUPORTE</h1>
+            </div>
             <div ref={ref} className="flex flex-col md:flex-row justify-between items-center h-auto lg:h-[50vh]">
                 <div className="w-full md:w-2/5 flex flex-col justify-between items-start h-full md:pr-10">
                     <div className="flex flex-col justify-start w-full">
@@ -59,7 +62,7 @@ export default function About() {
                     </div>
                 </div>
                 <motion.div
-                    className="relative w-full md:w-3/5 h-full flex justify-center items-center mt-10 sm:mt-10 md:mt-0"
+                    className="relative w-full md:w-3/5 h-full flex justify-center items-center mt-10 sm:mt-10 md:mt-0 ml-0  lg:ml-20"
                     initial="hidden"
                     animate={inView ? 'visible' : 'hidden'}
                     variants={containerVariants}
