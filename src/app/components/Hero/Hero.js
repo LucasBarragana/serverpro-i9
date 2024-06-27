@@ -34,7 +34,7 @@ export default function Hero() {
         quality={100}
       />
       <div className="backHero absolute top-0 left-0 w-full h-full"></div>
-      <div className="mx-auto relative px-10 sm:px-10 md:px-20 lg:px-40">
+      <div className="mx-auto relative px-10 sm:px-10 md:px-20 lg:px-40 max-w-screen-2xl">
         <div className="flex flex-col lg:flex-row justify-between items-center py-12">
           <motion.div
             className='w-full md:w-1/2 flex flex-col justify-center items-start p-4 sm:p-8 lg:px-0 z-10'

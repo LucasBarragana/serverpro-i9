@@ -53,7 +53,7 @@ export default function Plans() {
 
   return (
     <section id="Plans">
-      <div className="mx-auto relative flex flex-col justify-center items-center h-full text-white pt-20 pb-20 px-4 sm:px-10 md:px-20 lg:px-60">
+      <div className="mx-auto relative flex flex-col justify-center items-center h-full text-white pt-20 pb-20 px-4 sm:px-10 md:px-20 lg:px-60 max-w-screen-2xl">
         <motion.div
           ref={rocketRef}
           variants={rocketVariants}

@@ -26,7 +26,7 @@ export default function Process() {
         <div
           className="backProcess2 absolute inset-0"
         ></div>
-        <div className="mx-auto relative z-10 flex flex-col justify-center items-center h-full text-white ">
+        <div className="mx-auto relative z-10 flex flex-col justify-center items-center h-full text-white max-w-screen-2xl">
           <div className="flex flex-col items-center text-center mb-16">
             <motion.h4
               ref={ref}

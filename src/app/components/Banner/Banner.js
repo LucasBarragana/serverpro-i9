@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Banner() {
     return (
         <section id="Banner" className="relative">
-            <div className="overflow-hidden relative mx-auto z-10 mx-10 sm:mx-10 md:mx-20 lg:mx-40">
+            <div className="overflow-hidden relative mx-auto z-10 mx-10 sm:mx-10 md:mx-20 lg:mx-40 max-w-screen-2xl">
                 <div className="banner absolute inset-x-0 bottom-0 h-full opacity-100 z-0"></div>
                 <div className="banner2 absolute inset-x-0 bottom-0 h-full opacity-100 z-0"></div>
                 <div className="p-8 relative mx-auto">

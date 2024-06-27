@@ -24,7 +24,7 @@ export default function About() {
     };
 
     return (
-        <section id="About" className="mx-auto relative px-10 sm:px-10 md:px-20 my-16 lg:px-40">
+        <section id="About" className="mx-auto relative px-10 sm:px-10 md:px-20 my-16 lg:px-40 max-w-screen-2xl">
             <div ref={ref} className="flex flex-col md:flex-row justify-between items-center h-auto lg:h-[70vh]">
                 <div className="w-full md:w-2/5 flex flex-col justify-between items-start h-full md:pr-10">
                     <div className="flex flex-col justify-start w-full">
