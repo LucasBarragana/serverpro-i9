@@ -1,8 +1,9 @@
-import { Poppins } from "next/font/google"; // Importar Poppins do Google Fonts
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '700'] });
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 
 export const metadata = {
   title: "Create Next App",
