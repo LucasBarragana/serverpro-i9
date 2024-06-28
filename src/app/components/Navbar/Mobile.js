@@ -36,7 +36,7 @@ export default function Mobile() {
 
   return (
     <div className="block lg:hidden">
-      <div className="fixed w-full z-50 h-[66px] backdrop-blur-lg shadow-lg ">
+      <div className="fixed w-full z-50 h-[66px] backdrop-blur-lg shadow-lg px-10">
         <div className="mx-auto py-2 flex justify-between items-center max-w-6xl mt-3 px-6">
           <div className="text-lg font-bold">
             <Link href="/">

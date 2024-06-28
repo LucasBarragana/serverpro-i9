@@ -52,8 +52,8 @@ export default function Plans() {
   };
 
   return (
-    <section id="Plans">
-      <div className="mx-auto relative flex flex-col justify-center items-center h-full text-white pt-20 pb-20 px-4 sm:px-10 md:px-20 lg:px-60 max-w-screen-2xl">
+    <section id="Plans" className='box-border'>
+      <div className="mx-auto relative flex flex-col justify-center items-center h-full text-white pt-20 pb-20 px-4 px-20 sm:px-20 md:px-20 lg:px-30 xl:px-60 max-w-screen-2xl">
         <motion.div
           ref={rocketRef}
           variants={rocketVariants}

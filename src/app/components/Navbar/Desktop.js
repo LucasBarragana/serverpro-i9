@@ -32,9 +32,9 @@ export default function Desktop() {
   }, []);
 
   return (
-    <nav className="hidden lg:block">
-      <div className='fixed top-0 left-0 w-full z-50 h-[66px] backdrop-blur-lg shadow-lg'>
-        <div className="mx-auto py-3 flex justify-between items-center px-10 sm:px-10 md:px-20 lg:px-40 max-w-screen-2xl">
+    <nav className="hidden lg:block box-border">
+      <div className='fixed top-0 left-0 w-full z-50 h-[66px] backdrop-blur-lg shadow-lg '>
+        <div className="mx-auto py-3 flex justify-between items-center px-20 sm:px-20 md:px-20 lg:px-40 max-w-screen-2xl">
           <div className="flex items-center">
             <div className="font-bold">
               <Link href="/">

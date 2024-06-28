@@ -3,13 +3,13 @@ import Link from "next/link";
 
 export default function Banner() {
     return (
-        <section id="Banner" className="relative">
-            <div className="overflow-hidden relative mx-auto z-10 mx-10 sm:mx-10 md:mx-20 lg:mx-40 max-w-screen-2xl">
+        <section id="Banner" className="mx-auto relative box-border">
+            <div className="overflow-hidden relative mx-auto z-10 mx-20 xl:mx-40  max-w-screen-2xl">
                 <div className="banner absolute inset-x-0 bottom-0 h-full opacity-100 z-0"></div>
                 <div className="banner2 absolute inset-x-0 bottom-0 h-full opacity-100 z-0"></div>
                 <div className="p-8 relative mx-auto">
-                    <div className="flex flex-col md:flex-row gap-20 justify-center items-center">
-                        <div className="flex gap-4 items-center mb-4 md:mb-0">
+                    <div className="flex flex-col md:flex-row gap-5 xl:gap-20 justify-center items-center">
+                        <div className="flex gap-4 items-center xl:mb-0">
                             <Image src='/logo4.svg' width={80} height={80} alt="logo" className="w-5 h-5 md:w-36 md:h-36" />
                             <Image src='/name-logo-line.svg' width={180} height={60} alt="logo" className="w-28 h-8 md:w-80 md:h-20" />
                         </div>

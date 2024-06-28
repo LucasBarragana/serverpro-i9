@@ -26,7 +26,7 @@ export default function Hero() {
   };
 
   return (
-    <section id='Hero' className="relative w-full h-[90vh] flex items-center justify-center overflow-hidden">
+    <section id='Hero' className="relative w-full flex items-center justify-center overflow-hidden box-border">
       <Image
         src="/fundo1.jpeg"
         alt="Background Image"
@@ -34,16 +34,16 @@ export default function Hero() {
         quality={100}
       />
       <div className="backHero absolute top-0 left-0 w-full h-full"></div>
-      <div className="mx-auto relative px-10 sm:px-10 md:px-20 lg:px-40 max-w-screen-2xl">
-        <div className="flex flex-col lg:flex-row justify-between items-center py-12">
+      <div className="mx-auto relative px-20 sm:px-20 md:px-20 lg:px-40 py-10 max-w-screen-2xl">
+        <div className="flex flex-col lg:flex-row justify-between py-20 lg:py-20 xl:40">
           <motion.div
-            className='w-full md:w-1/2 flex flex-col justify-center items-start p-4 sm:p-8 lg:px-0 z-10'
+            className='w-full md:w-1/2 flex flex-col justify-center items-start z-10'
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
             variants={containerVariants}
           >
             <motion.h1
-              className="text-3xl sm:text-4xl md:text-4xl lg:text-6xl  text-white mb-4 sm:mb-6 md:mb-10"
+              className="text-3xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl  text-white mb-4 sm:mb-6 md:mb-10"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: 'easeOut' }}

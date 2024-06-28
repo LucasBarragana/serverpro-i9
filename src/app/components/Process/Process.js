@@ -11,8 +11,8 @@ export default function Process() {
   });
 
   return (
-    <section id="Process">
-      <div className="relative w-full py-28 px-10 sm:px-10 md:px-20 lg:px-40">
+    <section id="Process" className='box-border'>
+      <div className="relative w-full py-28 px-20 sm:px-20 md:px-20 lg:px-40 xl-px-60">
         <Image
           src="/fundo2.jpeg"
           alt="Background Image"

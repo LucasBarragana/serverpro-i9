@@ -6,7 +6,7 @@ body {
   background: linear-gradient(#000000, #3C0E80);
   background-size: cover;
   background-attachment: fixed;
-  
+  box-sizing: border-box;
 }
 
 
